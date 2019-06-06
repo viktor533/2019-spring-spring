@@ -16,7 +16,9 @@
 
 6. task: Override postconstruct and predestroy bean methods from all used beans
 
-### End date: 12.06.2019
+7. task: Create proxies using CGLIB library
+
+### End date: 15.06.2019
 
 # Nice to have points:
 
