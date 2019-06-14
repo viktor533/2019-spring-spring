@@ -28,7 +28,7 @@ public class SystemAnalyzer extends Thread {
 
     @Override
     public void run() {
-//        System.out.println("Start Thread!");
+        if (DEBUG) { System.out.println("Start Analyze!"); }
         long now = System.currentTimeMillis();
         OperatingSystemMXBean osBean = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
 
@@ -47,7 +47,7 @@ public class SystemAnalyzer extends Thread {
                 }
             }
         }
-//        System.out.println("Finish Thread!");
+        System.out.println("Finish Thread!");
     }
 
     public List<Double> getOsStatData() {
