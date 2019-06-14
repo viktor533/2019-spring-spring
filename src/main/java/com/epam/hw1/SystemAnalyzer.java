@@ -20,7 +20,7 @@ public class SystemAnalyzer extends Thread {
         this.TIME_STEP = timeStep;
     }
 
-    public void stopThread() {
+    public void finishAnalyzer() {
         synchronized(isRun) {
             isRun = false;
         }
